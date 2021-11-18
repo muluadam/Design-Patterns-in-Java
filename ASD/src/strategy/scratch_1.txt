@@ -1,0 +1,4 @@
+Summery
+    define an alogorithm at a high level
+    define the interface you expect each strategy to follow
+    provide for either dynamic or static composition of strategy in teh overall algorithm

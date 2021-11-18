@@ -1,0 +1,18 @@
+Algorithm can be decomposed in to common parts + specifics
+Strategy- does this by composition
+    high level algo uses an interfaces
+    concrete implementations implement the interface
+
+Template -does the same through inheritance
+    overall alg makes use of abstract member
+    inheritors override the abstract members
+    parent template method invoked
+
+
+            Template method allow us to define the skeleton of the algorithm, with concrete implementations defined in subclasses
+
+
+Summery of Template
+    define an algorithm at hight leve
+    define constituent parts as abstract methods/properties
+    inherit the algorithm class providing necessary overrides

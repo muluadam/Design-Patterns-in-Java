@@ -1,0 +1,12 @@
+Motivataion
+    iteration /traversal is acore functionality of various data structores
+
+An iterator is a class that facilitates the traversal
+    keeps a reference to the current element
+    knows how to move to a different elemet
+
+Java has Iterator<T> and Iterable<T>
+    Iterator<T> specifies the iterator API
+    A class needs to be Iterable in order to support  for (Foo foo: bar) loops
+
+Iterator is an object that facilitates te traversal of data structure

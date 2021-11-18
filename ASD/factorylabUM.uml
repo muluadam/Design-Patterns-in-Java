@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>practice.factorylabUM</OriginalElement>
+  <nodes>
+    <node x="1196.5067460317462" y="675.0">practice.factorylabUM.AzureResourceFactory</node>
+    <node x="866.423330562668" y="276.7587346187031">practice.factorylabUM.AzureCloud</node>
+    <node x="698.9874800484736" y="276.7587346187031">practice.factorylabUM.GCPStorage</node>
+    <node x="526.4139166951942" y="283.0412462582337">practice.factorylabUM.S3Storage</node>
+    <node x="918.287009197514" y="132.5">practice.factorylabUM.Instance</node>
+    <node x="1930.5900793650794" y="675.0">practice.factorylabUM.AwsResourceFactory</node>
+    <node x="271.78210907098935" y="31.0">practice.factorylabUM.Messaging</node>
+    <node x="1819.7889345350861" y="145.5174692374062">practice.factorylabUM.CloudResourceFactory</node>
+    <node x="2237.673412698413" y="849.0">practice.factorylabUM.Client</node>
+    <node x="20.10403724649781" y="283.0412462582337">practice.factorylabUM.GSute</node>
+    <node x="607.2628101113273" y="20.999999999999996">practice.factorylabUM.Storage</node>
+    <node x="1321.0" y="387.0">practice.factorylabUM.GCPInstance</node>
+    <node x="835.3166914332218" y="387.0">practice.factorylabUM.Ec2Instance</node>
+    <node x="1255.8011475333876" y="132.5">practice.factorylabUM.Subscription</node>
+    <node x="186.68070668382973" y="283.0412462582337">practice.factorylabUM.MSExchange</node>
+    <node x="1624.5900793650794" y="675.0">practice.factorylabUM.GCPResourceFactory</node>
+    <node x="353.84035334191486" y="283.0412462582337">practice.factorylabUM.AmazonSeS</node>
+    <node x="1093.081618723212" y="387.0">practice.factorylabUM.AzureInstance</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="practice.factorylabUM.GCPInstance" target="practice.factorylabUM.Messaging" relationship="DEPENDENCY">
+      <point x="0.0" y="-72.0" />
+      <point x="1456.5" y="365.0" />
+      <point x="1431.2634920634923" y="365.0" />
+      <point x="1431.2634920634923" y="295.0" />
+      <point x="1391.0067460317462" y="295.0" />
+      <point x="1391.0067460317462" y="101.0" />
+      <point x="1652.0067460317462" y="101.0" />
+      <point x="1652.0067460317462" y="61.0" />
+      <point x="34.25" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.MSExchange" target="practice.factorylabUM.Messaging" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="263.1807066838297" y="91.0" />
+      <point x="447.9234126984129" y="91.0" />
+      <point x="447.9234126984129" y="81.0" />
+      <point x="306.03210907098935" y="81.0" />
+      <point x="-34.25" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.GCPResourceFactory" target="practice.factorylabUM.CloudResourceFactory" relationship="REALIZATION">
+      <point x="95.33333333333326" y="-61.0" />
+      <point x="1862.9234126984127" y="623.0" />
+      <point x="1896.75" y="623.0" />
+      <point x="1896.75" y="573.0" />
+      <point x="1867.4556012017526" y="573.0" />
+      <point x="-95.33333333333348" y="49.5" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureResourceFactory" target="practice.factorylabUM.Storage" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.0" />
+      <point x="1339.5067460317462" y="653.0" />
+      <point x="1482.923412698413" y="653.0" />
+      <point x="1482.923412698413" y="573.0" />
+      <point x="1681.2634920634923" y="573.0" />
+      <point x="1681.2634920634923" y="91.0" />
+      <point x="1929.673412698413" y="91.0" />
+      <point x="1929.673412698413" y="51.0" />
+      <point x="28.5" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.AzureResourceFactory" relationship="CREATE">
+      <point x="-90.0" y="-50.0" />
+      <point x="2282.6734126984124" y="828.0" />
+      <point x="791.006746031746" y="828.0" />
+      <point x="791.006746031746" y="818.0" />
+      <point x="1339.506746031746" y="818.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.MSExchange" relationship="CREATE">
+      <point x="-90.0" y="-50.0" />
+      <point x="2282.673412698413" y="828.0" />
+      <point x="791.006746031746" y="828.0" />
+      <point x="791.006746031746" y="818.0" />
+      <point x="812.6801587301588" y="818.0" />
+      <point x="812.6801587301588" y="603.0" />
+      <point x="263.1807066838297" y="603.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Ec2Instance" target="practice.factorylabUM.Storage" relationship="DEPENDENCY">
+      <point x="90.33333333333348" y="-72.0" />
+      <point x="1061.1500247665554" y="365.0" />
+      <point x="2083.9166666666665" y="365.0" />
+      <point x="2083.9166666666665" y="315.0" />
+      <point x="2094.4166666666665" y="315.0" />
+      <point x="2094.4166666666665" y="91.0" />
+      <point x="1929.673412698413" y="91.0" />
+      <point x="1929.673412698413" y="51.0" />
+      <point x="28.5" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.GCPInstance" target="practice.factorylabUM.Subscription" relationship="TO_ONE">
+      <point x="-90.33333333333326" y="-72.0" />
+      <point x="1366.1666666666667" y="355.0" />
+      <point x="1380.5067460317462" y="355.0" />
+      <point x="1380.5067460317462" y="285.0" />
+      <point x="1313.0511475333876" y="285.0" />
+      <point x="-57.25" y="50.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AwsResourceFactory" target="practice.factorylabUM.AmazonSeS" relationship="CREATE">
+      <point x="-95.33333333333326" y="-61.0" />
+      <point x="1978.2567460317462" y="653.0" />
+      <point x="1960.5968253968256" y="653.0" />
+      <point x="1960.5968253968256" y="583.0" />
+      <point x="1083.9301587301588" y="583.0" />
+      <point x="1083.9301587301588" y="553.0" />
+      <point x="428.84035334191486" y="553.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="practice.factorylabUM.GCPResourceFactory" target="practice.factorylabUM.Instance" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.0" />
+      <point x="1767.5900793650794" y="633.0" />
+      <point x="1657.2567460317462" y="633.0" />
+      <point x="1657.2567460317462" y="613.0" />
+      <point x="1776.636507936508" y="613.0" />
+      <point x="1776.636507936508" y="325.0" />
+      <point x="2146.8400793650794" y="325.0" />
+      <point x="2146.8400793650794" y="265.0" />
+      <point x="1121.537009197514" y="265.0" />
+      <point x="67.75" y="60.5" />
+    </edge>
+    <edge source="practice.factorylabUM.CloudResourceFactory" target="practice.factorylabUM.Messaging" relationship="DEPENDENCY">
+      <point x="0.0" y="-49.5" />
+      <point x="1962.7889345350861" y="315.0" />
+      <point x="2496.8400793650794" y="315.0" />
+      <point x="2496.8400793650794" y="101.0" />
+      <point x="1652.0067460317462" y="101.0" />
+      <point x="1652.0067460317462" y="61.0" />
+      <point x="34.25" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureResourceFactory" target="practice.factorylabUM.AzureInstance" relationship="CREATE">
+      <point x="-95.33333333333326" y="-61.0" />
+      <point x="1244.173412698413" y="653.0" />
+      <point x="1118.263492063492" y="653.0" />
+      <point x="1118.263492063492" y="623.0" />
+      <point x="776.256746031746" y="623.0" />
+      <point x="776.256746031746" y="563.0" />
+      <point x="1228.581618723212" y="563.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="practice.factorylabUM.GCPResourceFactory" target="practice.factorylabUM.AzureInstance" relationship="CREATE">
+      <point x="-95.33333333333326" y="-61.0" />
+      <point x="1672.2567460317462" y="643.0" />
+      <point x="346.55317460317474" y="643.0" />
+      <point x="346.55317460317474" y="633.0" />
+      <point x="776.256746031746" y="633.0" />
+      <point x="776.256746031746" y="563.0" />
+      <point x="1228.581618723212" y="563.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureResourceFactory" target="practice.factorylabUM.CloudResourceFactory" relationship="REALIZATION">
+      <point x="95.33333333333326" y="-61.0" />
+      <point x="1434.8400793650794" y="623.0" />
+      <point x="1896.75" y="623.0" />
+      <point x="1896.75" y="573.0" />
+      <point x="1867.4556012017526" y="573.0" />
+      <point x="-95.33333333333348" y="49.5" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureInstance" target="practice.factorylabUM.Instance" relationship="REALIZATION">
+      <point x="90.33333333333326" y="-72.0" />
+      <point x="1318.9149520565452" y="345.0" />
+      <point x="1493.423412698413" y="345.0" />
+      <point x="1493.423412698413" y="275.0" />
+      <point x="986.037009197514" y="275.0" />
+      <point x="-67.75" y="60.5" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureInstance" target="practice.factorylabUM.Subscription" relationship="DEPENDENCY">
+      <point x="-90.33333333333326" y="-72.0" />
+      <point x="1074.1666666666665" y="387.0" />
+      <point x="1074.1666666666665" y="365.0" />
+      <point x="1100.5900793650794" y="365.0" />
+      <point x="1100.5900793650794" y="305.0" />
+      <point x="1850.2634920634923" y="305.0" />
+      <point x="1850.2634920634923" y="265.0" />
+      <point x="1427.5511475333876" y="265.0" />
+      <point x="57.25" y="50.0" />
+    </edge>
+    <edge source="practice.factorylabUM.GCPResourceFactory" target="practice.factorylabUM.Storage" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.0" />
+      <point x="1767.5900793650794" y="633.0" />
+      <point x="1657.2567460317462" y="633.0" />
+      <point x="1657.2567460317462" y="613.0" />
+      <point x="1771.386507936508" y="613.0" />
+      <point x="1771.386507936508" y="91.0" />
+      <point x="1929.673412698413" y="91.0" />
+      <point x="1929.673412698413" y="51.0" />
+      <point x="28.5" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AwsResourceFactory" target="practice.factorylabUM.CloudResourceFactory" relationship="REALIZATION">
+      <point x="0.0" y="-61.0" />
+      <point x="2073.5900793650794" y="623.0" />
+      <point x="1896.75" y="623.0" />
+      <point x="1896.75" y="573.0" />
+      <point x="1867.4556012017526" y="573.0" />
+      <point x="-95.33333333333348" y="49.5" />
+    </edge>
+    <edge source="practice.factorylabUM.GCPInstance" target="practice.factorylabUM.Instance" relationship="REALIZATION">
+      <point x="90.33333333333348" y="-72.0" />
+      <point x="1546.8333333333335" y="345.0" />
+      <point x="1493.423412698413" y="345.0" />
+      <point x="1493.423412698413" y="275.0" />
+      <point x="986.037009197514" y="275.0" />
+      <point x="-67.75" y="60.5" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.GCPResourceFactory" relationship="CREATE">
+      <point x="-90.0" y="-50.0" />
+      <point x="2282.6734126984124" y="828.0" />
+      <point x="791.006746031746" y="828.0" />
+      <point x="791.006746031746" y="818.0" />
+      <point x="1767.5900793650794" y="818.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AmazonSeS" target="practice.factorylabUM.Messaging" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="428.84035334191486" y="91.0" />
+      <point x="447.9234126984129" y="91.0" />
+      <point x="447.9234126984129" y="81.0" />
+      <point x="306.03210907098935" y="81.0" />
+      <point x="-34.25" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.CloudResourceFactory" relationship="DEPENDENCY">
+      <point x="90.0" y="-50.0" />
+      <point x="2462.673412698413" y="828.0" />
+      <point x="2483.0" y="828.0" />
+      <point x="2483.0" y="818.0" />
+      <point x="2383.673412698413" y="818.0" />
+      <point x="2383.673412698413" y="653.0" />
+      <point x="2058.12226786842" y="653.0" />
+      <point x="95.33333333333348" y="49.5" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureResourceFactory" target="practice.factorylabUM.AzureCloud" relationship="CREATE">
+      <point x="-95.33333333333326" y="-61.0" />
+      <point x="1244.173412698413" y="653.0" />
+      <point x="1118.263492063492" y="653.0" />
+      <point x="1118.263492063492" y="603.0" />
+      <point x="993.6801587301588" y="603.0" />
+      <point x="993.6801587301588" y="573.0" />
+      <point x="941.923330562668" y="573.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureInstance" target="practice.factorylabUM.Subscription" relationship="TO_ONE">
+      <point x="0.0" y="-72.0" />
+      <point x="1228.581618723212" y="355.0" />
+      <point x="1380.5067460317462" y="355.0" />
+      <point x="1380.5067460317462" y="285.0" />
+      <point x="1313.0511475333876" y="285.0" />
+      <point x="-57.25" y="50.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Instance" target="practice.factorylabUM.Storage" relationship="DEPENDENCY">
+      <point x="0.0" y="-60.5" />
+      <point x="1053.787009197514" y="71.0" />
+      <point x="1929.673412698413" y="71.0" />
+      <point x="1929.673412698413" y="51.0" />
+      <point x="28.5" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureResourceFactory" target="practice.factorylabUM.Subscription" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.0" />
+      <point x="1339.5067460317462" y="653.0" />
+      <point x="1482.923412698413" y="653.0" />
+      <point x="1482.923412698413" y="573.0" />
+      <point x="1681.2634920634923" y="573.0" />
+      <point x="1681.2634920634923" y="335.0" />
+      <point x="1850.2634920634923" y="335.0" />
+      <point x="1850.2634920634923" y="265.0" />
+      <point x="1427.5511475333876" y="265.0" />
+      <point x="57.25" y="50.0" />
+    </edge>
+    <edge source="practice.factorylabUM.CloudResourceFactory" target="practice.factorylabUM.Storage" relationship="DEPENDENCY">
+      <point x="0.0" y="-49.5" />
+      <point x="1962.7889345350861" y="315.0" />
+      <point x="2496.8400793650794" y="315.0" />
+      <point x="2496.8400793650794" y="305.0" />
+      <point x="2551.626984126984" y="305.0" />
+      <point x="2551.626984126984" y="91.0" />
+      <point x="1929.673412698413" y="91.0" />
+      <point x="1929.673412698413" y="51.0" />
+      <point x="28.5" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Ec2Instance" target="practice.factorylabUM.Messaging" relationship="DEPENDENCY">
+      <point x="90.33333333333348" y="-72.0" />
+      <point x="1061.1500247665554" y="365.0" />
+      <point x="2083.9166666666665" y="365.0" />
+      <point x="2083.9166666666665" y="315.0" />
+      <point x="2094.4166666666665" y="315.0" />
+      <point x="2094.4166666666665" y="101.0" />
+      <point x="1652.0067460317462" y="101.0" />
+      <point x="1652.0067460317462" y="61.0" />
+      <point x="34.25" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureResourceFactory" target="practice.factorylabUM.Instance" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.0" />
+      <point x="1339.5067460317462" y="653.0" />
+      <point x="1482.923412698413" y="653.0" />
+      <point x="1482.923412698413" y="573.0" />
+      <point x="1681.2634920634923" y="573.0" />
+      <point x="1681.2634920634923" y="325.0" />
+      <point x="2146.8400793650794" y="325.0" />
+      <point x="2146.8400793650794" y="265.0" />
+      <point x="1121.537009197514" y="265.0" />
+      <point x="67.75" y="60.5" />
+    </edge>
+    <edge source="practice.factorylabUM.Ec2Instance" target="practice.factorylabUM.Subscription" relationship="DEPENDENCY">
+      <point x="90.33333333333348" y="-72.0" />
+      <point x="1061.1500247665554" y="365.0" />
+      <point x="2083.9166666666665" y="365.0" />
+      <point x="2083.9166666666665" y="295.0" />
+      <point x="1850.2634920634923" y="295.0" />
+      <point x="1850.2634920634923" y="265.0" />
+      <point x="1427.5511475333876" y="265.0" />
+      <point x="57.25" y="50.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Ec2Instance" target="practice.factorylabUM.Instance" relationship="REALIZATION">
+      <point x="0.0" y="-72.0" />
+      <point x="970.8166914332218" y="345.0" />
+      <point x="1493.423412698413" y="345.0" />
+      <point x="1493.423412698413" y="275.0" />
+      <point x="986.037009197514" y="275.0" />
+      <point x="-67.75" y="60.5" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.Storage" relationship="DEPENDENCY">
+      <point x="90.0" y="-50.0" />
+      <point x="2462.673412698413" y="828.0" />
+      <point x="2483.0" y="828.0" />
+      <point x="2483.0" y="818.0" />
+      <point x="2558.125" y="818.0" />
+      <point x="2558.125" y="91.0" />
+      <point x="1929.673412698413" y="91.0" />
+      <point x="1929.673412698413" y="51.0" />
+      <point x="28.5" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureInstance" target="practice.factorylabUM.Storage" relationship="DEPENDENCY">
+      <point x="-90.33333333333326" y="-72.0" />
+      <point x="1138.2482853898787" y="365.0" />
+      <point x="1100.5900793650794" y="365.0" />
+      <point x="1100.5900793650794" y="91.0" />
+      <point x="1929.673412698413" y="91.0" />
+      <point x="1929.673412698413" y="51.0" />
+      <point x="28.5" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.CloudResourceFactory" target="practice.factorylabUM.Subscription" relationship="DEPENDENCY">
+      <point x="0.0" y="-49.5" />
+      <point x="1962.7889345350861" y="315.0" />
+      <point x="2496.8400793650794" y="315.0" />
+      <point x="2496.8400793650794" y="285.0" />
+      <point x="1850.2634920634923" y="285.0" />
+      <point x="1850.2634920634923" y="265.0" />
+      <point x="1427.5511475333876" y="265.0" />
+      <point x="57.25" y="50.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureResourceFactory" target="practice.factorylabUM.MSExchange" relationship="CREATE">
+      <point x="-95.33333333333326" y="-61.0" />
+      <point x="1244.173412698413" y="653.0" />
+      <point x="1118.263492063492" y="653.0" />
+      <point x="1118.263492063492" y="613.0" />
+      <point x="812.6801587301588" y="613.0" />
+      <point x="812.6801587301588" y="603.0" />
+      <point x="263.1807066838297" y="603.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="practice.factorylabUM.GCPInstance" target="practice.factorylabUM.Subscription" relationship="DEPENDENCY">
+      <point x="0.0" y="-72.0" />
+      <point x="1456.5" y="365.0" />
+      <point x="1431.2634920634923" y="365.0" />
+      <point x="1431.2634920634923" y="315.0" />
+      <point x="1850.2634920634923" y="315.0" />
+      <point x="1850.2634920634923" y="265.0" />
+      <point x="1427.5511475333876" y="265.0" />
+      <point x="57.25" y="50.0" />
+    </edge>
+    <edge source="practice.factorylabUM.GSute" target="practice.factorylabUM.Messaging" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="95.10403724649781" y="91.0" />
+      <point x="447.9234126984129" y="91.0" />
+      <point x="447.9234126984129" y="81.0" />
+      <point x="306.03210907098935" y="81.0" />
+      <point x="-34.25" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureResourceFactory" target="practice.factorylabUM.Messaging" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.0" />
+      <point x="1339.5067460317462" y="653.0" />
+      <point x="1482.923412698413" y="653.0" />
+      <point x="1482.923412698413" y="573.0" />
+      <point x="1310.5" y="573.0" />
+      <point x="1310.5" y="101.0" />
+      <point x="1652.0067460317462" y="101.0" />
+      <point x="1652.0067460317462" y="61.0" />
+      <point x="34.25" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AwsResourceFactory" target="practice.factorylabUM.Ec2Instance" relationship="CREATE">
+      <point x="-95.33333333333326" y="-61.0" />
+      <point x="1978.2567460317462" y="653.0" />
+      <point x="1960.5968253968256" y="653.0" />
+      <point x="1960.5968253968256" y="613.0" />
+      <point x="970.8166914332218" y="613.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Instance" target="practice.factorylabUM.Messaging" relationship="DEPENDENCY">
+      <point x="0.0" y="-60.5" />
+      <point x="1053.787009197514" y="81.0" />
+      <point x="1652.0067460317462" y="81.0" />
+      <point x="1652.0067460317462" y="61.0" />
+      <point x="34.25" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.CloudResourceFactory" target="practice.factorylabUM.Instance" relationship="DEPENDENCY">
+      <point x="0.0" y="-49.5" />
+      <point x="1962.7889345350861" y="315.0" />
+      <point x="2496.8400793650794" y="315.0" />
+      <point x="2496.8400793650794" y="275.0" />
+      <point x="2146.8400793650794" y="275.0" />
+      <point x="2146.8400793650794" y="265.0" />
+      <point x="1121.537009197514" y="265.0" />
+      <point x="67.75" y="60.5" />
+    </edge>
+    <edge source="practice.factorylabUM.AwsResourceFactory" target="practice.factorylabUM.Messaging" relationship="DEPENDENCY">
+      <point x="95.33333333333348" y="-61.0" />
+      <point x="2168.923412698413" y="653.0" />
+      <point x="2146.5900793650794" y="653.0" />
+      <point x="2146.5900793650794" y="563.0" />
+      <point x="2157.3400793650794" y="563.0" />
+      <point x="2157.3400793650794" y="101.0" />
+      <point x="1652.0067460317462" y="101.0" />
+      <point x="1652.0067460317462" y="61.0" />
+      <point x="34.25" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.GCPResourceFactory" target="practice.factorylabUM.Messaging" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.0" />
+      <point x="1767.5900793650794" y="633.0" />
+      <point x="1657.2567460317462" y="633.0" />
+      <point x="1657.2567460317462" y="613.0" />
+      <point x="1692.2634920634923" y="613.0" />
+      <point x="1692.2634920634923" y="101.0" />
+      <point x="1652.0067460317462" y="101.0" />
+      <point x="1652.0067460317462" y="61.0" />
+      <point x="34.25" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.GCPResourceFactory" target="practice.factorylabUM.GSute" relationship="CREATE">
+      <point x="-95.33333333333326" y="-61.0" />
+      <point x="1672.2567460317462" y="643.0" />
+      <point x="346.55317460317474" y="643.0" />
+      <point x="346.55317460317474" y="623.0" />
+      <point x="95.10403724649781" y="623.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.GSute" relationship="CREATE">
+      <point x="-90.0" y="-50.0" />
+      <point x="2282.673412698413" y="828.0" />
+      <point x="791.006746031746" y="828.0" />
+      <point x="791.006746031746" y="818.0" />
+      <point x="95.10403724649781" y="818.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.CloudResourceFactory" relationship="TO_ONE">
+      <point x="0.0" y="-50.0" />
+      <point x="2372.673412698413" y="828.0" />
+      <point x="2339.1666666666665" y="828.0" />
+      <point x="2339.1666666666665" y="653.0" />
+      <point x="1962.7889345350861" y="653.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.AzureCloud" relationship="CREATE">
+      <point x="-90.0" y="-50.0" />
+      <point x="2282.673412698413" y="828.0" />
+      <point x="791.006746031746" y="828.0" />
+      <point x="791.006746031746" y="818.0" />
+      <point x="993.6801587301588" y="818.0" />
+      <point x="993.6801587301588" y="573.0" />
+      <point x="941.923330562668" y="573.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.AmazonSeS" relationship="CREATE">
+      <point x="-90.0" y="-50.0" />
+      <point x="2282.673412698413" y="828.0" />
+      <point x="791.006746031746" y="828.0" />
+      <point x="791.006746031746" y="818.0" />
+      <point x="1083.9301587301588" y="818.0" />
+      <point x="1083.9301587301588" y="553.0" />
+      <point x="428.84035334191486" y="553.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.Subscription" relationship="DEPENDENCY">
+      <point x="90.0" y="-50.0" />
+      <point x="2462.673412698413" y="828.0" />
+      <point x="2483.0" y="828.0" />
+      <point x="2483.0" y="818.0" />
+      <point x="2464.3400793650794" y="818.0" />
+      <point x="2464.3400793650794" y="335.0" />
+      <point x="1850.2634920634923" y="335.0" />
+      <point x="1850.2634920634923" y="265.0" />
+      <point x="1427.5511475333876" y="265.0" />
+      <point x="57.25" y="50.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.GCPStorage" relationship="CREATE">
+      <point x="-90.0" y="-50.0" />
+      <point x="2282.673412698413" y="828.0" />
+      <point x="791.006746031746" y="828.0" />
+      <point x="791.006746031746" y="818.0" />
+      <point x="242.25" y="818.0" />
+      <point x="242.25" y="653.0" />
+      <point x="776.4874800484736" y="653.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureInstance" target="practice.factorylabUM.Messaging" relationship="DEPENDENCY">
+      <point x="-90.33333333333326" y="-72.0" />
+      <point x="1138.2482853898787" y="365.0" />
+      <point x="1100.5900793650794" y="365.0" />
+      <point x="1100.5900793650794" y="101.0" />
+      <point x="1652.0067460317462" y="101.0" />
+      <point x="1652.0067460317462" y="61.0" />
+      <point x="34.25" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AwsResourceFactory" target="practice.factorylabUM.Storage" relationship="DEPENDENCY">
+      <point x="95.33333333333348" y="-61.0" />
+      <point x="2168.923412698413" y="653.0" />
+      <point x="2146.5900793650794" y="653.0" />
+      <point x="2146.5900793650794" y="563.0" />
+      <point x="2157.3400793650794" y="563.0" />
+      <point x="2157.3400793650794" y="305.0" />
+      <point x="2475.3400793650794" y="305.0" />
+      <point x="2475.3400793650794" y="91.0" />
+      <point x="1929.673412698413" y="91.0" />
+      <point x="1929.673412698413" y="51.0" />
+      <point x="28.5" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.AwsResourceFactory" relationship="CREATE">
+      <point x="-90.0" y="-50.0" />
+      <point x="2282.6734126984124" y="828.0" />
+      <point x="791.006746031746" y="828.0" />
+      <point x="791.006746031746" y="818.0" />
+      <point x="2073.5900793650794" y="818.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="practice.factorylabUM.GCPResourceFactory" target="practice.factorylabUM.Subscription" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.0" />
+      <point x="1767.5900793650794" y="633.0" />
+      <point x="1657.2567460317462" y="633.0" />
+      <point x="1657.2567460317462" y="613.0" />
+      <point x="1776.636507936508" y="613.0" />
+      <point x="1776.636507936508" y="335.0" />
+      <point x="1850.2634920634923" y="335.0" />
+      <point x="1850.2634920634923" y="265.0" />
+      <point x="1427.5511475333876" y="265.0" />
+      <point x="57.25" y="50.0" />
+    </edge>
+    <edge source="practice.factorylabUM.GCPInstance" target="practice.factorylabUM.Storage" relationship="DEPENDENCY">
+      <point x="0.0" y="-72.0" />
+      <point x="1456.5" y="365.0" />
+      <point x="1431.2634920634923" y="365.0" />
+      <point x="1431.2634920634923" y="91.0" />
+      <point x="1929.673412698413" y="91.0" />
+      <point x="1929.673412698413" y="51.0" />
+      <point x="28.5" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Ec2Instance" target="practice.factorylabUM.Subscription" relationship="TO_ONE">
+      <point x="-90.33333333333348" y="-72.0" />
+      <point x="880.4833580998883" y="355.0" />
+      <point x="1380.5067460317462" y="355.0" />
+      <point x="1380.5067460317462" y="285.0" />
+      <point x="1313.0511475333876" y="285.0" />
+      <point x="-57.25" y="50.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AwsResourceFactory" target="practice.factorylabUM.Instance" relationship="DEPENDENCY">
+      <point x="95.33333333333348" y="-61.0" />
+      <point x="2168.923412698413" y="653.0" />
+      <point x="2146.5900793650794" y="653.0" />
+      <point x="2146.5900793650794" y="265.0" />
+      <point x="1121.537009197514" y="265.0" />
+      <point x="67.75" y="60.5" />
+    </edge>
+    <edge source="practice.factorylabUM.AzureCloud" target="practice.factorylabUM.Storage" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="941.923330562668" y="101.0" />
+      <point x="619.4234126984127" y="101.0" />
+      <point x="619.4234126984127" y="71.0" />
+      <point x="635.7628101113273" y="71.0" />
+      <point x="-28.5" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.Instance" relationship="DEPENDENCY">
+      <point x="90.0" y="-50.0" />
+      <point x="2462.673412698413" y="828.0" />
+      <point x="2483.0" y="828.0" />
+      <point x="2483.0" y="818.0" />
+      <point x="2486.3400793650794" y="818.0" />
+      <point x="2486.3400793650794" y="325.0" />
+      <point x="2146.8400793650794" y="325.0" />
+      <point x="2146.8400793650794" y="265.0" />
+      <point x="1121.537009197514" y="265.0" />
+      <point x="67.75" y="60.5" />
+    </edge>
+    <edge source="practice.factorylabUM.GCPResourceFactory" target="practice.factorylabUM.GCPStorage" relationship="CREATE">
+      <point x="-95.33333333333326" y="-61.0" />
+      <point x="1672.2567460317462" y="643.0" />
+      <point x="346.55317460317474" y="643.0" />
+      <point x="346.55317460317474" y="613.0" />
+      <point x="776.4874800484736" y="613.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AwsResourceFactory" target="practice.factorylabUM.Subscription" relationship="DEPENDENCY">
+      <point x="95.33333333333348" y="-61.0" />
+      <point x="2168.923412698413" y="653.0" />
+      <point x="2146.5900793650794" y="653.0" />
+      <point x="2146.5900793650794" y="563.0" />
+      <point x="2135.8400793650794" y="563.0" />
+      <point x="2135.8400793650794" y="335.0" />
+      <point x="1850.2634920634923" y="335.0" />
+      <point x="1850.2634920634923" y="265.0" />
+      <point x="1427.5511475333876" y="265.0" />
+      <point x="57.25" y="50.0" />
+    </edge>
+    <edge source="practice.factorylabUM.AwsResourceFactory" target="practice.factorylabUM.S3Storage" relationship="CREATE">
+      <point x="-95.33333333333326" y="-61.0" />
+      <point x="1978.2567460317462" y="653.0" />
+      <point x="1960.5968253968256" y="653.0" />
+      <point x="1960.5968253968256" y="593.0" />
+      <point x="903.4301587301588" y="593.0" />
+      <point x="903.4301587301588" y="583.0" />
+      <point x="601.4139166951942" y="583.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="practice.factorylabUM.GCPStorage" target="practice.factorylabUM.Storage" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="776.4874800484736" y="101.0" />
+      <point x="619.4234126984127" y="101.0" />
+      <point x="619.4234126984127" y="71.0" />
+      <point x="635.7628101113273" y="71.0" />
+      <point x="-28.5" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.S3Storage" target="practice.factorylabUM.Storage" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="601.4139166951942" y="101.0" />
+      <point x="619.4234126984127" y="101.0" />
+      <point x="619.4234126984127" y="71.0" />
+      <point x="635.7628101113273" y="71.0" />
+      <point x="-28.5" y="15.0" />
+    </edge>
+    <edge source="practice.factorylabUM.Client" target="practice.factorylabUM.S3Storage" relationship="CREATE">
+      <point x="-90.0" y="-50.0" />
+      <point x="2282.673412698413" y="828.0" />
+      <point x="791.006746031746" y="828.0" />
+      <point x="791.006746031746" y="818.0" />
+      <point x="903.4301587301588" y="818.0" />
+      <point x="903.4301587301588" y="583.0" />
+      <point x="601.4139166951942" y="583.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.795860045612841" showDependencies="true" x="1506.7265131389736" y="237.70899609390926" />
+  <SelectedNodes>
+    <node>practice.factorylabUM.Subscription</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
